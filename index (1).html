@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="ms">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Belajar Suku Kata</title>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="wrap">
+<header>
+<section class="titleBox">
+<h1>Belajar Suku Kata</h1>
+<p class="subtitle">Klik kad suku kata untuk dengar bunyi dan belajar membaca.</p>
+</section>
+<div aria-hidden="true" class="mascot">📚</div>
+</header>
+<section class="panel topControls">
+<div class="voiceBtns">
+<select id="voiceSelect" title="Pilih suara"></select>
+<button class="gray" id="testVoice">Test Suara</button>
+</div>
+<div class="audioUploadBox">
+<label for="audioUpload">Letak suara sendiri</label>
+<input accept="audio/*" id="audioUpload" multiple="" type="file"/>
+<div class="audioStatus" id="audioStatus">Namakan fail ikut bunyi, contoh: a.mp3, b.mp3, ba.mp3, bǝ.mp3, be.mp3, e-pepet.mp3, e-taling.mp3. Boleh pilih banyak fail sekali.</div>
+</div>
+</section>
+<section class="panel">
+<h2>Belajar Bunyi Vokal</h2>
+<p class="smallNote">Klik huruf vokal untuk dengar bunyi. Vokal <b>ǝ</b> ialah <b>e pepet</b>, manakala vokal <b>e</b> ialah <b>e taling</b>.</p>
+<div class="learnGrid" id="vowelGrid"></div>
+</section>
+<section class="panel">
+<h2>Belajar Bunyi Konsonan</h2>
+<p class="smallNote">Klik huruf konsonan untuk dengar bunyi. Contoh: klik <b>b</b>, game akan menyebut bunyi “b”.</p>
+<div class="learnGrid" id="consonantGrid"></div>
+</section>
+<section class="panel">
+<h2>Belajar Suku Kata</h2>
+<p class="smallNote">Klik mana-mana suku kata. Contoh: <b>bǝ</b> ialah e pepet, manakala <b>be</b> ialah e taling.</p>
+<div class="learnGrid" id="learnGrid"></div>
+</section>
+<p class="footerNote">Nota: Bunyi menggunakan fungsi suara browser. Untuk sebutan paling jelas, pilih suara Malay / Indonesian jika ada dalam senarai.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
